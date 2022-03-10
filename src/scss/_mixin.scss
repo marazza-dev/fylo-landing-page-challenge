@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+@mixin flex($align-items, $justify-content) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin grid-child($col-start, $col-end, $row-start, $row-end) {
+  -ms-grid-column: $col-start;
+  -ms-grid-column-span: $col-end - $col-start;
+  -ms-grid-row: $row-start;
+  -ms-grid-row-span: $row-end - $row-start;
+  grid-column: #{$col-start}/#{$col-end};
+  grid-row: #{$row-start}/#{$row-end};
+}
+
+@mixin gradient {
+  background: $clr-accent-cta-gradient-cyan;
+  background: linear-gradient(
+    120deg,
+    $clr-accent-cta-gradient-cyan 0%,
+    $clr-accent-cta-gradient-blue 60%
+  );
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}

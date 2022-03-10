@@ -1,13 +1,14 @@
 import "./App.scss";
 
-import { Navbar, Hero } from "./layouts";
+import { Navbar, Hero, Features } from "./components";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className='main-wrapper'>
         <Hero />
+        <Features />
       </main>
     </>
   );

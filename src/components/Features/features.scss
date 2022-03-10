@@ -1,0 +1,23 @@
+@use "../../scss/" as *;
+
+.feature__container {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  max-width: 70rem;
+  @include desktop {
+    gap: 2rem;
+  }
+}
+
+.feature__card {
+  @include flex(center, center);
+  gap: 1rem;
+  width: min(100%, 30rem);
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+.feature__image {
+  margin-bottom: 1rem;
+}

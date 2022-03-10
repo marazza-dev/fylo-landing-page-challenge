@@ -55,3 +55,7 @@ select {
 .btn {
   @include btn;
 }
+.main-wrapper {
+  @include flex(center, center);
+  flex-direction: column;
+}

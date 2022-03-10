@@ -50,3 +50,8 @@ textarea,
 select {
   font: inherit;
 }
+
+// Utility classes
+.btn {
+  @include btn;
+}

@@ -1,0 +1,37 @@
+@use "../../scss" as *;
+
+.nav__container {
+  width: 100%;
+  @include flex(center, space-between);
+  padding: 1.5em;
+  background: $clr-primary-bg-intro;
+  @include desktop {
+    padding: 4em;
+  }
+}
+
+.nav__logo {
+  flex: 1;
+}
+
+.nav__link--list {
+  @include flex(center, flex-end);
+  flex-direction: row;
+  flex: 2;
+  gap: clamp(1rem, 5vw, 3rem);
+  padding: 0;
+  margin-inline-start: 2rem;
+  list-style: none;
+}
+
+.nav__link--item {
+  text-decoration: none;
+  color: $clr-neutral;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    text-decoration: underline;
+  }
+}

@@ -11,6 +11,12 @@
   display: grid;
 }
 
+@mixin bottom-spacing($margin-bottom) {
+  & *:not(:last-child) {
+    margin-bottom: $margin-bottom;
+  }
+}
+
 @mixin grid-child($col-start, $col-end, $row-start, $row-end) {
   -ms-grid-column: $col-start;
   -ms-grid-column-span: $col-end - $col-start;
@@ -25,12 +31,24 @@
   background: linear-gradient(
     120deg,
     $clr-accent-cta-gradient-cyan 0%,
-    $clr-accent-cta-gradient-blue 60%
+    $clr-accent-cta-gradient-blue 100%
   );
 }
 
 @mixin desktop {
   @media (min-width: $breakpoint-desktop) {
     @content;
+  }
+}
+
+@mixin btn($padding: 1em 6em) {
+  text-decoration: none;
+  padding: $padding;
+  border-radius: 30px;
+  color: $clr-neutral;
+  @include gradient;
+  &:hover,
+  &:focus {
+    background: $clr-accent-cta-gradient-cyan;
   }
 }

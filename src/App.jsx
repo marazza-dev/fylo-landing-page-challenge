@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <main className='container'>
+      <main>
         <Hero />
       </main>
     </>

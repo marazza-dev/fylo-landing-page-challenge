@@ -16,6 +16,9 @@
   flex-direction: column;
   padding: 2rem;
   text-align: center;
+  & p {
+    max-width: 50ch;
+  }
 }
 
 .feature__image {

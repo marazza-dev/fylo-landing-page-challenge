@@ -5,9 +5,11 @@
   max-width: min(100%, 80rem);
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   @include desktop {
     flex-direction: row;
+    padding: 8%;
+    gap: 2.5rem;
   }
 }
 

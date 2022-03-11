@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import { Navbar, Hero, Features } from "./components";
+import { Navbar, Hero, Features, Team } from "./components";
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       <main className='main-wrapper'>
         <Hero />
         <Features />
+        <Team />
       </main>
     </>
   );

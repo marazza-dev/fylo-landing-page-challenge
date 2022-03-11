@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import { Navbar, Hero, Features, Team } from "./components";
+import { Navbar, Hero, Features, Team, Testimonials } from "./components";
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
         <Hero />
         <Features />
         <Team />
+        <Testimonials />
       </main>
     </>
   );

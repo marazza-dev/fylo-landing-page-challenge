@@ -13,8 +13,10 @@ const Hero = () => {
             className='hero__image'
           />
           <header className='hero__header'>
-            <h1>All your files in one secure location, accessible anywhere.</h1>
-            <p>
+            <h1 className='heading'>
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p className='paragraph'>
               Fylo stores all your most important files in one secure location.
               Access them wherever you need, share and collaborate with friends
               family, and co-workers.

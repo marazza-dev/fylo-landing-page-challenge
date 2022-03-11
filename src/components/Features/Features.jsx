@@ -35,8 +35,8 @@ const Features = () => {
         return (
           <div key={index} className='feature__card'>
             <img src={item.image} alt={item.title} className='feature__image' />
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
+            <h2 className='heading__sub'>{item.title}</h2>
+            <p className='paragraph'>{item.text}</p>
           </div>
         );
       })}

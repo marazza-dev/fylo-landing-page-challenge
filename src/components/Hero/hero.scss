@@ -5,14 +5,37 @@
   overflow: hidden;
   padding-bottom: 2rem;
   width: 100%;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background: $clr-primary-bg-main;
+    bottom: 0;
+    z-index: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 30vh;
+    z-index: 0;
+    background: url("../../images/bg-curvy-mobile.svg") bottom no-repeat;
+  }
 }
 
 .hero__container {
   @include flex(center, center);
-  @include bottom-spacing(1rem);
+  @include bottom-spacing(1.5rem);
   flex-direction: column;
   width: calc(100% - 4rem);
   margin: auto;
+  position: relative;
+  z-index: 10;
 }
 
 .hero__header {

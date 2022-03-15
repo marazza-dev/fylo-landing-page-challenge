@@ -8,6 +8,10 @@
   position: relative;
   z-index: 1;
 
+  @media (min-width: 1440px) {
+    padding-bottom: 10rem;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -16,6 +20,9 @@
     background: $clr-primary-bg-main;
     bottom: 0;
     z-index: 0;
+    @media (min-width: 376px) {
+      display: none;
+    }
   }
   &::before {
     content: "";
@@ -25,6 +32,11 @@
     bottom: 30vh;
     z-index: 0;
     background: url("../../images/bg-curvy-mobile.svg") bottom no-repeat;
+
+    @media (min-width: 376px) {
+      background: url("../../images/bg-curvy-desktop.svg") bottom no-repeat;
+      bottom: 0;
+    }
   }
 }
 

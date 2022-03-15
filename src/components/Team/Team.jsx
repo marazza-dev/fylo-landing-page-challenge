@@ -5,7 +5,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 const Team = () => {
   return (
-    <section className='team__container'>
+    <section className='team__container' id='team'>
       <div className='team__image--wrapper'>
         <img
           src={productiveImg}

@@ -4,8 +4,10 @@
   @include flex(center, center);
   flex-wrap: wrap;
   max-width: 70rem;
+  margin-top: 2rem;
   @include desktop {
     gap: 2rem;
+    margin-top: 5rem;
   }
 }
 

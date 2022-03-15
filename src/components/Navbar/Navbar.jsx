@@ -10,12 +10,12 @@ const Navbar = () => {
         </div>
         <ul className='nav__link--list'>
           <li>
-            <a href='#' className='nav__link--item'>
+            <a href='#features' className='nav__link--item'>
               Features
             </a>
           </li>
           <li>
-            <a href='#' className='nav__link--item'>
+            <a href='#team' className='nav__link--item'>
               Team
             </a>
           </li>

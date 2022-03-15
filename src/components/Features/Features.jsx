@@ -30,7 +30,7 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <section className='feature__container'>
+    <section className='feature__container' id='features'>
       {featuresData.map((item, index) => {
         return (
           <div key={index} className='feature__card'>

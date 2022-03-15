@@ -2,14 +2,15 @@
 
 .testimonial__container {
   @include flex(center, center);
+  max-width: min(100%, 80rem);
   flex-wrap: wrap;
   gap: 1.5rem 1rem;
 }
 
 .testimonial__card {
-  width: min(80%, 25rem);
+  width: min(80%, 360px);
   background-color: $clr-primary-bg-testimonials;
-  padding: 1.5rem;
+  padding: 1.75rem;
 
   // quotes background
   &:first-child {
@@ -29,10 +30,23 @@
 
   &--heading {
     @include flex(center, flex-start);
+    margin-top: 1.5rem;
 
     & img {
+      border-radius: 50%;
+      max-width: 12%;
+      margin-inline-end: 0.5rem;
     }
   }
   &--profile {
+    h4 {
+      font-size: 0.8rem;
+      color: $clr-neutral;
+    }
+    span {
+      font-size: 0.7rem;
+      color: $clr-neutral;
+      opacity: 0.7;
+    }
   }
 }

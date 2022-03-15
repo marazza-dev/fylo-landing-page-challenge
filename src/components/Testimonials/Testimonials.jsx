@@ -31,7 +31,7 @@ const Testimonials = () => {
       {testimonialsData.map((item, index) => {
         return (
           <div key={index} className='testimonial__card'>
-            <p>{item.text}</p>
+            <p className='paragraph'>{item.text}</p>
             <div className='testimonial__card--heading'>
               <img src={item.image} alt={item.name} />
               <div className='testimonial__card--profile'>

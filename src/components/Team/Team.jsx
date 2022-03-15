@@ -13,7 +13,7 @@ const Team = () => {
         />
       </div>
       <div className='team__content--wrapper'>
-        <h2 className='heading__sub'>Stay productive, wherever you are</h2>
+        <h2 className='heading'>Stay productive, wherever you are</h2>
         <p className='paragraph'>
           Never let location be an issue when accessing your files. Fylo has you
           covered for all of your file storage needs.

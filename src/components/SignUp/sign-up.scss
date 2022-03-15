@@ -1,0 +1,61 @@
+@use "../../scss/" as *;
+
+.sign-up__section {
+  width: 100%;
+}
+
+.sign-up__container {
+  @include flex(center, center);
+  flex-direction: column;
+  max-width: min(90%, 55rem);
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: $clr-primary-bg-intro;
+  border-radius: 15px;
+
+  @include desktop {
+    padding: 4rem 2rem;
+  }
+}
+
+.sign-up__heading {
+  text-align: center;
+  @include bottom-spacing(1rem);
+  & p {
+    max-width: 80ch;
+    font-size: 0.95rem;
+  }
+}
+
+.sign-up__form {
+  @include flex(center, center);
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include desktop {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  & input {
+    width: 100%;
+    padding: 1em 1.5em;
+    border-radius: 30px;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0.2;
+    }
+  }
+}
+
+.btn--submit {
+  border: none;
+  padding: 1em 1.5em;
+  width: 100%;
+  @include desktop {
+    width: 40%;
+  }
+}

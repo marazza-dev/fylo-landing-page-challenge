@@ -1,1 +1,38 @@
 @use "../../scss/" as *;
+
+.testimonial__container {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  gap: 1.5rem 1rem;
+}
+
+.testimonial__card {
+  width: min(80%, 25rem);
+  background-color: $clr-primary-bg-testimonials;
+  padding: 1.5rem;
+
+  // quotes background
+  &:first-child {
+    position: relative;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -30px;
+      left: 5px;
+      background-image: url("../../images/bg-quotes.png");
+      background-repeat: no-repeat;
+      background-size: 80%;
+    }
+  }
+
+  &--heading {
+    @include flex(center, flex-start);
+
+    & img {
+    }
+  }
+  &--profile {
+  }
+}

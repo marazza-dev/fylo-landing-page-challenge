@@ -3,7 +3,7 @@
 .feature__container {
   @include flex(center, center);
   flex-wrap: wrap;
-  max-width: 70rem;
+  max-width: min(100%, 80rem);
   margin-top: 2rem;
   @include desktop {
     gap: 2rem;

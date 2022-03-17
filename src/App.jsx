@@ -7,6 +7,7 @@ import {
   Team,
   Testimonials,
   SignUp,
+  Footer,
 } from "./components";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Team />
         <Testimonials />
         <SignUp />
+        <Footer />
       </main>
     </>
   );

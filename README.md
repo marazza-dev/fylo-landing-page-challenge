@@ -20,8 +20,8 @@ Based on the given design users should be able to:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/fylo-dark-theme-solution-with-react-and-sass-72mM9TGxA](https://www.frontendmentor.io/solutions/fylo-dark-theme-solution-with-react-and-sass-72mM9TGxA)
+- Live Site URL: [https://marazza-dev.github.io/fylo-landing-page-challenge](https://marazza-dev.github.io/fylo-landing-page-challenge)
 
 ## Built with
 

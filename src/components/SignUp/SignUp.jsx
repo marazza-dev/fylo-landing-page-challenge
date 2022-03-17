@@ -13,7 +13,7 @@ const SignUp = () => {
   );
 
   return (
-    <section className='sign-up__section'>
+    <section className='sign-up__section' id='signup'>
       <div className='sign-up__container'>
         <div className='sign-up__heading'>
           <h2 className='heading'>Get early access today</h2>

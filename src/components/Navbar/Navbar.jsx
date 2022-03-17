@@ -20,7 +20,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href='#' className='nav__link--item'>
+            <a href='#signup' className='nav__link--item'>
               Sign In
             </a>
           </li>

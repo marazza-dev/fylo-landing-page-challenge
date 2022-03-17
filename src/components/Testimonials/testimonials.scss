@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   gap: 1.5rem 1rem;
   margin-bottom: 5rem;
+  @include desktop {
+    margin-bottom: 10rem;
+  }
 }
 
 .testimonial__card {
